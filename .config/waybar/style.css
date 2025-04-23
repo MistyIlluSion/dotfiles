@@ -1,0 +1,56 @@
+* {
+  all: unset;
+  border: none;
+  border-radius: 4px;
+  font-family: Maple Mono NF CN;
+}
+
+#waybar {
+  background: transparent;
+}
+
+#cpu,
+#memory,
+#temperature
+{
+  background-color: rgba(34, 36, 54, 0.95);
+  font-size: 14px;
+  margin: 0px;
+  padding: 0 6px;
+}
+
+#network,
+#clock
+{
+  background-color: rgba(34, 36, 54, 0.95);
+  font-size: 14px;
+  margin: 0px 8px;
+  padding: 0px 8px;
+}
+
+#cpu {
+  color: #c3e88d;
+  border-radius: 4px 0 0 4px;
+  padding-left: 8px;
+}
+
+#memory {
+  color: #ffc777;
+  border-radius: 0;
+}
+
+#temperature {
+  color: #82aaff;
+  border-radius: 0 4px 4px 0;
+  padding-right: 8px;
+}
+
+#network {
+  color: #86e1fc;
+}
+
+#clock {
+  color: #c099ff;
+  padding: 0px 16px;
+}
+

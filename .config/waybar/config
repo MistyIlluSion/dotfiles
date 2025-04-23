@@ -1,0 +1,46 @@
+[
+  {
+    "clock": {
+      "format": "{:%A %Y-%m-%d %H:%M}"
+    },
+    "cpu": {
+      "format": " {usage}%",
+      "interval": 5,
+      "tooltip": false
+    },
+    "height": 32,
+    "layer": "bottom",
+    "margin-bottom": 0,
+    "margin-left": 8,
+    "margin-right": 8,
+    "margin-top": 8,
+    "memory": {
+      "format": " {used:0.1f}G/{total:0.0f}G",
+      "interval": 5,
+      "tooltip": false
+    },
+    "modules-center": [
+      "clock"
+    ],
+    "modules-left": [
+      "cpu",
+      "memory",
+      "temperature",
+      "network"
+    ],
+    "network": {
+      "format": "{ifname}",
+      "format-disconnected": " ",
+      "format-ethernet": " {ipaddr}/{cidr}",
+      "format-wifi": " {essid}({signalStrength}%)",
+      "max-length": 40
+    },
+    "position": "top",
+    "temperature": {
+      "format": " {temperatureC}°C",
+      "hwmon-path": "/sys/class/hwmon/hwmon6/temp1_input",
+      "interval": 5,
+      "tooltip": false
+    }
+  }
+]
